@@ -5,8 +5,13 @@ The Multi-Client File Server Application is a robust file-sharing system enablin
 Features
 
 Upload: Clients can upload files from their local systems to the server's repository.
+
 Download: Retrieve server-stored files onto local devices for offline use.
+
 List: View all files available on the server for download or management.
+
 Delete: Remove unnecessary files from the server to free up space.
+
 Multi-Client Support: Multiple clients can perform operations concurrently.
+
 Ease of Use: Simple command-based interface supports user-friendly interaction with commands like UPLOAD, DOWNLOAD, LIST, and DELETE.
