@@ -1,82 +1,12 @@
 # File-Sharing-System
 
-Multi-Client File Server Application
+The Multi-Client File Server Application is a robust file-sharing system enabling seamless interaction between clients and a central server repository. It supports essential operations like uploading, downloading, listing, and deleting files, allowing clients to manage server-stored data effectively. Built with multi-threading using gcc -pthread, the application facilitates concurrent connections, enabling multiple clients to interact with the server simultaneously. Communication between the client and server is handled over a hardcoded port (8080), ensuring efficient data exchange. This tool is ideal for distributed teams requiring centralized file storage and retrieval.
 
 Features
 
-•	Upload: Clients can upload files to the server’s repository.
-•	Download: Clients can download files from the server.
-•	List: View all files stored in the server’s repository.
-•	Delete: Remove specific files from the server’s repository.
-
-
-Compile and Run
-
-1. Compile the Server and Client
-make  (which performs below commands)
-    gcc -pthread server.c -o server
-    gcc client.c -o client
-    ./server
-
-2. Start the Server
-(Hardcoded to port 8080)
-./server
-
-3. Start a Client
-
-In another terminal, run:
-
-./client
-
-You can run multiple clients simultaneously.
-
-Usage
-
-Commands Supported by the Client
-
-1.	UPLOAD:
-Upload a file to the server.
-
-UPLOAD /path/to/filename
-
-
-2.	DOWNLOAD:
-Download a file from the server.
-
-DOWNLOAD filename
-
-
-3.	LIST:
-List all files stored on the server.
-
-LIST
-
-
-4.	DELETE:
-Delete a file from the server.
-
-DELETE filename
-
-
-5.	EXIT:
-Disconnect from the server.
-
-EXIT
-
-Example Usage
-
-Enter command (UPLOAD, DOWNLOAD, LIST, DELETE, EXIT): UPLOAD /Users/user/Documents/test.txt
-File test.txt uploaded.
-
-Enter command (UPLOAD, DOWNLOAD, LIST, DELETE, EXIT): LIST
-Files on server:
-test.txt
-
-Enter command (UPLOAD, DOWNLOAD, LIST, DELETE, EXIT): DOWNLOAD test.txt
-File test.txt downloaded.
-
-Enter command (UPLOAD, DOWNLOAD, LIST, DELETE, EXIT): DELETE test.txt
-File deleted.
-
-Enter command (UPLOAD, DOWNLOAD, LIST, DELETE, EXIT): LIST
-Files on server:
+Upload: Clients can upload files from their local systems to the server's repository.
+Download: Retrieve server-stored files onto local devices for offline use.
+List: View all files available on the server for download or management.
+Delete: Remove unnecessary files from the server to free up space.
+Multi-Client Support: Multiple clients can perform operations concurrently.
+Ease of Use: Simple command-based interface supports user-friendly interaction with commands like UPLOAD, DOWNLOAD, LIST, and DELETE.
